@@ -12,7 +12,7 @@ function Footer() {
         </div>
         <nav className="footer-nav" aria-label="Pied de page">
           <a href="#spots">Les spots</a>
-          <a href="#guide">Le guide</a>
+          <a href="#guide">La carte</a>
           <a href="#apropos">À propos</a>
         </nav>
       </div>

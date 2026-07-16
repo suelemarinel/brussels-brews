@@ -7,7 +7,7 @@ function Hero() {
           Les meilleurs cafés de Bruxelles, testés tasse par tasse.
         </h1>
         <p className="hero-sub">
-          Des adresses choisies avec soin — pour travailler, flâner, bruncher
+          Des adresses choisies avec soin pour travailler, flâner, bruncher
           ou tomber amoureux. Zéro sponsoring, que des coups de cœur.
         </p>
         <a href="#spots" className="hero-cta">

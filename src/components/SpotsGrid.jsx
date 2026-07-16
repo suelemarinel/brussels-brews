@@ -5,7 +5,7 @@ function SpotsGrid({ cafes, activeTags, onToggle, onSelect }) {
     <section id="spots" className="spots-section">
       <h2>Les spots</h2>
       <p className="spots-intro">
-        Filtre par ambiance, explore en images — clique sur un café pour le voir sur la carte.
+        Filtre par ambiance, explore en images et clique sur un café pour le voir sur la carte.
       </p>
       <FilterBar activeTags={activeTags} onToggle={onToggle} />
       {cafes.length === 0 ? (

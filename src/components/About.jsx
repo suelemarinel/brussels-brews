@@ -21,7 +21,7 @@ function About() {
           <div className="value">
             <span className="value-emoji">☕</span>
             <h3>Testé sur place</h3>
-            <p>Chaque café visité au moins deux fois, à des heures différentes.</p>
+            <p>Chaque café est visité au moins deux fois, à des heures différentes.</p>
           </div>
           <div className="value">
             <span className="value-emoji">💛</span>
