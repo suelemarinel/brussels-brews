@@ -62,3 +62,68 @@ main {
   background: #b4682e;
   color: #faf6ef;
 }
+
+.content {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.content .cafe-map {
+  flex: 1;
+}
+
+.cafe-detail {
+  position: relative;
+  width: 320px;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(180, 104, 46, 0.25);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(43, 33, 24, 0.08);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #2b2118;
+}
+
+.detail-quartier {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: #b4682e;
+  margin: 0;
+}
+
+.cafe-detail h2 {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.detail-rating {
+  color: #b4682e;
+  font-weight: 500;
+}
+
+.detail-blurb {
+  line-height: 1.6;
+}
+
+.detail-signature {
+  font-style: italic;
+}
+
+.detail-infos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
