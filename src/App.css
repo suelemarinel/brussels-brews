@@ -9,3 +9,29 @@ main {
   width: 100%;
   border-radius: 12px;
 }
+
+/* Conteneur positionné par Leaflet : on n'y touche pas */
+.cafe-marker {
+  background: none;
+  border: none;
+}
+
+/* La pastille visible : c'est elle qu'on anime */
+.cafe-marker-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #faf6ef;
+  border: 3px solid #b4682e;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(43, 33, 24, 0.35);
+  font-size: 18px;
+  transition: transform 0.15s ease;
+}
+
+.cafe-marker-inner:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
