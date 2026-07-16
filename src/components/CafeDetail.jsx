@@ -6,6 +6,14 @@ function CafeDetail({ cafe, onClose }) {
       <button className="close-btn" onClick={onClose} aria-label="Fermer la fiche">
         ✕
       </button>
+      {cafe.image && (
+    <img
+      src={cafe.image}
+      alt={`Le café ${cafe.name}`}
+      className="detail-photo"
+      loading="lazy"
+    />
+  )}
       <p className="detail-quartier">{cafe.quartier}</p>
       <h2>{cafe.name}</h2>
       <p className="detail-rating">

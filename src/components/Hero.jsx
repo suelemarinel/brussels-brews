@@ -14,12 +14,12 @@ function Hero() {
           Explorer la carte
         </a>
         <div className="hero-stats">
-        <div className="stat">
-          <span className="stat-num">4</span>
-          <span className="stat-label">cafés testés</span>
-        </div>
   <div className="stat">
-    <span className="stat-num">4</span>
+    <span className="stat-num">12</span>
+    <span className="stat-label">cafés testés</span>
+  </div>
+  <div className="stat">
+    <span className="stat-num">9</span>
     <span className="stat-label">quartiers</span>
   </div>
   <div className="stat">
