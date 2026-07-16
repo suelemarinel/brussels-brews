@@ -8,6 +8,7 @@ import cafes from './data/cafes.json';
 import { filterCafes, toggleTag } from './lib/filterCafes';
 import './App.css';
 import Marquee from './components/Marquee';
+import SpotsGrid from './components/SpotsGrid';
 
 function App() {
   const [activeTags, setActiveTags] = useState([]);
@@ -21,18 +22,26 @@ function App() {
       <Header />
       <Hero />
       <Marquee />
+      <SpotsGrid
+        cafes={visibleCafes}
+        activeTags={activeTags}
+        onToggle={(tag) => setActiveTags(toggleTag(activeTags, tag))}
+        onSelect={(id) => {
+          setSelectedId(id);
+          document.getElementById('guide')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      />
       <main id="guide" className="guide-section">
-        <h2>Trouve ton café</h2>
-        <p className="guide-intro">Filtre par ambiance, clique sur une tasse, découvre ton prochain QG.</p>
-        <FilterBar
-          activeTags={activeTags}
-          onToggle={(tag) => setActiveTags(toggleTag(activeTags, tag))}
-        />
+        <h2>Sur la carte</h2>
+        <p className="guide-intro">
+          Les mêmes filtres s'appliquent ici — clique sur une tasse pour ouvrir sa fiche.
+        </p>
         <div className="content">
-        <CafeMap
-          cafes={visibleCafes}
-          onSelect={(id) => setSelectedId((current) => (current === id ? null : id))}
-        />
+          <CafeMap
+            cafes={visibleCafes}
+            selectedId={selectedId}
+            onSelect={(id) => setSelectedId((current) => (current === id ? null : id))}
+          />
           <CafeDetail cafe={selectedCafe} onClose={() => setSelectedId(null)} />
         </div>
       </main>
