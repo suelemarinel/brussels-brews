@@ -10,8 +10,8 @@ function Hero() {
           Des adresses choisies avec soin — pour travailler, flâner, bruncher
           ou tomber amoureux. Zéro sponsoring, que des coups de cœur.
         </p>
-        <a href="#guide" className="hero-cta">
-          Explorer la carte
+        <a href="#spots" className="hero-cta">
+          Explorer les cafés
         </a>
         <div className="hero-stats">
   <div className="stat">
