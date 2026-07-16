@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import cafes from '../data/cafes.json';
+
 
 // Coordonnées du centre de Bruxelles (Grand-Place, à peu près ☕)
 const BRUSSELS_CENTER = [50.8466, 4.3528];
@@ -14,7 +14,7 @@ const cafeIcon = L.divIcon({
   popupAnchor: [0, -20],
 });
 
-function CafeMap() {
+function CafeMap({ cafes }) {
   return (
     <MapContainer
       center={BRUSSELS_CENTER}
