@@ -5,8 +5,8 @@ function Header() {
         Brussels Brews
       </a>
       <nav className="site-nav">
-        <a href="#guide">Le guide</a>
         <a href="#spots">Les spots</a>
+        <a href="#guide">Le carte</a>
         <a href="#apropos">À propos</a>
       </nav>
     </header>
