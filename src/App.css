@@ -35,3 +35,30 @@ main {
   transform: scale(1.15);
   cursor: pointer;
 }
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-chip {
+  padding: 0.5rem 1rem;
+  border: 2px solid #b4682e;
+  border-radius: 999px;
+  background: transparent;
+  color: #2b2118;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-chip:hover {
+  background: rgba(180, 104, 46, 0.1);
+}
+
+.filter-chip.active {
+  background: #b4682e;
+  color: #faf6ef;
+}
