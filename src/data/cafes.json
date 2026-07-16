@@ -1,0 +1,38 @@
+[
+  {
+    "id": "mok",
+    "name": "MOK Specialty Coffee",
+    "quartier": "Dansaert",
+    "lat": 50.8531,
+    "lng": 4.3417,
+    "tags": ["specialty", "travailler"],
+    "signature": "Filtre V60 single origin, torréfié maison"
+  },
+  {
+    "id": "cafe-capitale",
+    "name": "Café Capitale",
+    "quartier": "Centre",
+    "lat": 50.8446,
+    "lng": 4.3494,
+    "tags": ["specialty", "travailler"],
+    "signature": "Espresso blend maison, ambiance vinyle"
+  },
+  {
+    "id": "buddy-buddy",
+    "name": "Buddy Buddy",
+    "quartier": "Châtelain",
+    "lat": 50.8266,
+    "lng": 4.3620,
+    "tags": ["instagrammable", "date"],
+    "signature": "Latte au beurre de noisette maison"
+  },
+  {
+    "id": "parlor",
+    "name": "Parlor Coffee",
+    "quartier": "Saint-Gilles",
+    "lat": 50.8225,
+    "lng": 4.3573,
+    "tags": ["travailler", "brunch"],
+    "signature": "Banana bread + batch brew"
+  }
+]

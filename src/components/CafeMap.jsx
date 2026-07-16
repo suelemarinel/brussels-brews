@@ -1,5 +1,6 @@
-import { MapContainer, TileLayer } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import cafes from '../data/cafes.json';
 
 // Coordonnées du centre de Bruxelles (Grand-Place, à peu près ☕)
 const BRUSSELS_CENTER = [50.8466, 4.3528];
@@ -13,9 +14,18 @@ function CafeMap() {
       scrollWheelZoom={true}
     >
       <TileLayer
-  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-  url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+        url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
       />
+      {cafes.map((cafe) => (
+        <Marker key={cafe.id} position={[cafe.lat, cafe.lng]}>
+          <Popup>
+            <strong>{cafe.name}</strong>
+            <br />
+            {cafe.quartier} · {cafe.signature}
+          </Popup>
+        </Marker>
+      ))}
     </MapContainer>
   );
 }
