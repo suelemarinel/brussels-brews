@@ -29,7 +29,10 @@ function App() {
           onToggle={(tag) => setActiveTags(toggleTag(activeTags, tag))}
         />
         <div className="content">
-          <CafeMap cafes={visibleCafes} onSelect={setSelectedId} />
+        <CafeMap
+          cafes={visibleCafes}
+          onSelect={(id) => setSelectedId((current) => (current === id ? null : id))}
+        />
           <CafeDetail cafe={selectedCafe} onClose={() => setSelectedId(null)} />
         </div>
       </main>
