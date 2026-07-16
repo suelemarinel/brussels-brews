@@ -8,6 +8,8 @@ import { filterCafes, toggleTag } from './lib/filterCafes';
 import './App.css';
 import Marquee from './components/Marquee';
 import SpotsGrid from './components/SpotsGrid';
+import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   const [activeTags, setActiveTags] = useState([]);
@@ -44,6 +46,8 @@ function App() {
           <CafeDetail cafe={selectedCafe} onClose={() => setSelectedId(null)} />
         </div>
       </main>
+      <About />
+      <Footer />
     </>
   );
 }
