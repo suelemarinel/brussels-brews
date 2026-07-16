@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import CafeMap from './components/CafeMap';
-import FilterBar from './components/FilterBar';
 import CafeDetail from './components/CafeDetail';
 import cafes from './data/cafes.json';
 import { filterCafes, toggleTag } from './lib/filterCafes';
