@@ -3,36 +3,64 @@
     "id": "mok",
     "name": "MOK Specialty Coffee",
     "quartier": "Dansaert",
+    "address": "Rue Antoine Dansaert 196, 1000 Bruxelles",
     "lat": 50.8531,
     "lng": 4.3417,
     "tags": ["specialty", "travailler"],
-    "signature": "Filtre V60 single origin, torréfié maison"
+    "rating": 4.5,
+    "signature": "Filtre V60 single origin, torréfié maison",
+    "wifi": true,
+    "plugs": true,
+    "price": "€€",
+    "hours": "Lun–Ven 8h–17h · Sam–Dim 9h–17h",
+    "blurb": "Le torréfacteur de référence côté Dansaert. Grandes tables, lumière naturelle, et un filtre qui change selon les arrivages — parfait pour poser le laptop un matin entier."
   },
   {
     "id": "cafe-capitale",
     "name": "Café Capitale",
     "quartier": "Centre",
+    "address": "Rue du Midi 45, 1000 Bruxelles",
     "lat": 50.8446,
     "lng": 4.3494,
     "tags": ["specialty", "travailler"],
-    "signature": "Espresso blend maison, ambiance vinyle"
+    "rating": 4,
+    "signature": "Espresso blend maison, ambiance vinyle",
+    "wifi": true,
+    "plugs": true,
+    "price": "€€",
+    "hours": "Lun–Ven 7h30–18h · Sam–Dim 9h–18h",
+    "blurb": "Une institution du centre. Le genre d'endroit où le barista te reconnaît à la troisième visite et lance ton espresso avant que tu commandes."
   },
   {
     "id": "buddy-buddy",
     "name": "Buddy Buddy",
     "quartier": "Châtelain",
+    "address": "Rue du Bailli, 1050 Ixelles",
     "lat": 50.8266,
     "lng": 4.3620,
     "tags": ["instagrammable", "date"],
-    "signature": "Latte au beurre de noisette maison"
+    "rating": 4,
+    "signature": "Latte au beurre de noisette maison",
+    "wifi": false,
+    "plugs": false,
+    "price": "€€",
+    "hours": "Lun–Dim 8h–18h",
+    "blurb": "Décor pastel, laits végétaux maison et une signature nut-butter latte qui divise autant qu'elle fidélise. Le spot photogénique par excellence."
   },
   {
     "id": "parlor",
     "name": "Parlor Coffee",
     "quartier": "Saint-Gilles",
+    "address": "Chaussée de Charleroi 203, 1060 Saint-Gilles",
     "lat": 50.8225,
     "lng": 4.3573,
     "tags": ["travailler", "brunch"],
-    "signature": "Banana bread + batch brew"
+    "rating": 4.5,
+    "signature": "Banana bread + batch brew",
+    "wifi": true,
+    "plugs": true,
+    "price": "€€",
+    "hours": "Lun–Ven 8h–18h · Sam–Dim 9h–18h",
+    "blurb": "Grande salle, briques apparentes, playlist calme. Le QG officieux des freelances de Saint-Gilles — arrive avant 10h pour la table près de la fenêtre."
   }
 ]

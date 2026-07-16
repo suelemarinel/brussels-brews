@@ -1,11 +1,11 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-
 
 // Coordonnées du centre de Bruxelles (Grand-Place, à peu près ☕)
 const BRUSSELS_CENTER = [50.8466, 4.3528];
 
+// Marker custom : pastille ronde style café, en HTML/CSS pur
 const cafeIcon = L.divIcon({
   className: 'cafe-marker',
   html: '<span class="cafe-marker-inner">☕</span>',
@@ -14,7 +14,7 @@ const cafeIcon = L.divIcon({
   popupAnchor: [0, -20],
 });
 
-function CafeMap({ cafes }) {
+function CafeMap({ cafes, onSelect }) {
   return (
     <MapContainer
       center={BRUSSELS_CENTER}
@@ -27,13 +27,12 @@ function CafeMap({ cafes }) {
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
       />
       {cafes.map((cafe) => (
-        <Marker key={cafe.id} position={[cafe.lat, cafe.lng]} icon={cafeIcon}>
-          <Popup>
-            <strong>{cafe.name}</strong>
-            <br />
-            {cafe.quartier} · {cafe.signature}
-          </Popup>
-        </Marker>
+        <Marker
+          key={cafe.id}
+          position={[cafe.lat, cafe.lng]}
+          icon={cafeIcon}
+          eventHandlers={{ click: () => onSelect(cafe.id) }}
+        />
       ))}
     </MapContainer>
   );
